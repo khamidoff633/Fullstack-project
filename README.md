@@ -1,56 +1,23 @@
-# Jobify Pro Ultimate (Frontend + Backend)
+# Jobify Pro Ultimate (Frontend)
 
-This project is now a **full-stack** job board:
+This project is a **frontend-only** job board application:
 
 - **Frontend**: Vite + React + Tailwind
-- **Backend**: Node.js + Express + MongoDB (JWT auth, profiles, uploads, jobs)
 
-## 1) Run Backend (API)
-
-```bash
-cd server
-cp .env.example .env
-# edit .env (Mongo URI + JWT secrets)
-
-npm install
-npm run dev
-```
-
-API will run on: `http://localhost:5000`
-
-## 2) Run Frontend
+## Quick Start
 
 ```bash
-# from project root
 npm install
 npm run dev
 ```
 
 Frontend runs on: `http://localhost:5173`
 
-### Frontend environment
-
-Create a `.env` in the project root if needed:
-
-```bash
-VITE_API_URL=http://localhost:5000/api
-```
-
 ## Features included ✅
 
-- Register / Login (JWT access + refresh)
-- Roles: `candidate | employer | admin`
-- Mandatory profile flow (`profileCompleted`)
-- Profile pages:
-  - Create profile: `/create-profile`
-  - Edit profile: `/settings/profile`
-  - Public profile: `/u/:username`
-- File uploads (local):
-  - avatar, cover, resume, company logo
-- Jobs:
-  - Employer can post job (requires completed profile)
-  - Job details supports backend-created jobs
-- Applications:
-  - Candidate can apply to backend-created jobs (requires completed profile)
-
-> Note: The jobs list page is still using demo data by default; backend-created jobs work fully on the Job Details page.
+- Modern React UI with Tailwind CSS
+- Job listings and search functionality
+- User authentication UI (ready for API integration)
+- Profile management interface
+- Responsive design
+- Beautiful animations with Framer Motion

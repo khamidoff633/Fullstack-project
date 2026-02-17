@@ -24,18 +24,13 @@ dist-ssr
 *.sw?
 # Environment variables
 .env
-server/.env
 
 # Node
 node_modules/
-server/node_modules/
 
 # Build
 dist/
-server/dist/
 
-# Uploads
-server/uploads/
 
 # OS
 .DS_Store
